@@ -28,7 +28,7 @@ public class WriteEqualsIgnoreCase {
                 /*
                  * We will now check if the character is a letter.
                  * If it is, we check if the absolute value of the difference between the two characters == 32.
-                 * The difference between an uppercase letter and its lowercase counterpart or vice versa will always equal positive or negative 32 in ASCII.
+                 * The difference between an uppercase letter and its lowercase equivalent is always 32 in ASCII.
                  */
                 if (!((cStr >= 'A' && cStr <= 'Z' || cStr >= 'a' && cStr <= 'z') &&
                         Math.abs(cStr - cOther) == 32)) {
