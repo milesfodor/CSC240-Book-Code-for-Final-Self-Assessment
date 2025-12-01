@@ -70,7 +70,8 @@ public class WriteEqualsIgnoreCase {
         System.out.println(equalsIgnoreCase("a", "b"));           // false
         System.out.println(equalsIgnoreCase("a", "A" + 1));       // false
 
-        System.out.println(equalsIgnoreCase("café", "CAFÉ"));
+        // special characters
+        System.out.println(equalsIgnoreCase("café", "CAFÉ")); // false, returns true with regular equalsIgnoreCase()
 
     }
 }
