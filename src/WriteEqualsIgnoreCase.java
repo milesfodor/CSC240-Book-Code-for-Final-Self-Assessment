@@ -1,3 +1,6 @@
+/**
+ * Purpose: Write my own equalsIgnoreCase() method using only other String methods except for isLowerCase()
+ */
 public class WriteEqualsIgnoreCase {
     /**
      * Compares the case-insensitive equality of two strings.
