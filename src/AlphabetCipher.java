@@ -1,3 +1,7 @@
+/**
+ * Purpose: Develops a substitution cipher that uses an alphabet from
+ * the Alphabet class.
+ */
 public class AlphabetCipher extends Cipher {
 
     private Alphabet alphabet;
@@ -6,6 +10,12 @@ public class AlphabetCipher extends Cipher {
         alphabet = new Alphabet(keyword);
     }
 
+    /**
+     * Encodes the given word
+     *
+     * @param word The given word
+     * @return The encoded string
+     */
     @Override
     public String encode(String word) {
         StringBuilder result = new StringBuilder();
@@ -17,6 +27,12 @@ public class AlphabetCipher extends Cipher {
         return result.toString();
     }
 
+    /**
+     * Decodes the given word
+     *
+     * @param word The given word
+     * @return The decoded string
+     */
     @Override
     public String decode(String word) {
         StringBuilder result = new StringBuilder();
